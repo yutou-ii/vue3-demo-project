@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import TaskItem from './components/TaskItem.vue'
+import RequestTest from './components/RequestTest.vue'
 
 // 练习 1：控制技能墙是否显示
 const showWall = ref(true)
@@ -58,6 +59,15 @@ function handleTaskCompleted(minutes) {
         task-name="Vue 3 组件通信训练"
         @task-completed="handleTaskCompleted"
       />
+    </section>
+
+    <!-- ========== 0618 下午课后练习：Axios 拦截器与 Vite 代理测试 ========== -->
+    <section class="panel">
+      <div class="section-title">
+        <span>0618 下午课后练习</span>
+        <h2>Axios 错误处理拦截器与 Vite 多代理规则</h2>
+      </div>
+      <RequestTest />
     </section>
   </main>
 </template>
